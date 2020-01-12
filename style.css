@@ -1,0 +1,149 @@
+      *{
+      font-family: 'Fredericka the Great', cursive;
+      max-width: auto;
+      background: url("https://preventionlane.org/wp-content/uploads/2015/02/blackboard.jpg");
+      color: white;
+      background-color:transparent;
+      }
+      h1 {
+      font-size: 50px;
+      text-align:center;
+      background-color:transparent;
+      }
+      img {
+      margin: 0 auto;
+      border: 10px outset ;
+      border-radius: 20px;
+      display: block;
+      margin-bottom: 40px;
+      background-color:transparent;
+      background: transparent;
+      }
+      ul {
+      text-align:center;
+      padding: 10px;
+      background-color:transparent;
+      background: transparent;
+      }
+      li {
+      margin: 0 auto;
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      background-color:transparent;
+      background: transparent;
+      }
+      article {
+      max-width: auto;
+      padding: 20px;
+      margin: 0 auto;
+      background-color:transparent;
+      background: transparent;
+      }
+      @media (max-width: 500px) {
+      h1 {
+      font-size: 36px;
+      padding: 5px;
+      background-color:transparent;
+      }
+      li {
+      padding: 5px;
+      display: block;
+      background-color:transparent;
+      }
+      }
+      button {
+      border: 2px outset ;
+      border-radius: 25px;
+      text-align: center;
+      max-width: auto;
+      margin: 0 auto;
+      font-size: 15px;
+	  padding: 5px 10px 5px 10px;
+      }
+      h2 {
+      border: 2px groove ;
+      margin: 0 auto;
+      border-radius: 25px;
+      text-align: center;
+      background-color:transparent;
+      background: transparent;
+	  padding: 5px;
+      }
+      p {
+      padding: 10px 10px 20px 10px;
+      line-height: auto;
+      text-align: justify;
+      bottom: 0;
+      margin: 0 auto;
+      height: auto;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+      background-color:transparent;
+      background: transparent;
+      font-size: 15px;
+      }
+      a{
+      background: transparent;
+      }
+      .fade-in {
+      animation: fadeIn ease 3s;
+      -webkit-animation: fadeIn ease 3s;
+      -moz-animation: fadeIn ease 3s;
+      -o-animation: fadeIn ease 3s;
+      -ms-animation: fadeIn ease 3s;
+      }
+	  .fade-in-longer {
+      animation: fadeIn ease 6s;
+      -webkit-animation: fadeIn ease 6s;
+      -moz-animation: fadeIn ease 6s;
+      -o-animation: fadeIn ease 6s;
+      -ms-animation: fadeIn ease 6s;
+      }
+	  .fade-in-longest {
+      animation: fadeIn ease 9s;
+      -webkit-animation: fadeIn ease 9s;
+      -moz-animation: fadeIn ease 9s;
+      -o-animation: fadeIn ease 9s;
+      -ms-animation: fadeIn ease 9s;
+      }
+      @keyframes fadeIn {
+      0% {
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
+      }
+      @-moz-keyframes fadeIn {
+      0% {
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
+      }
+      @-webkit-keyframes fadeIn {
+      0% {
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
+      }
+      @-o-keyframes fadeIn {
+      0% {
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      }
+      }
+      @-ms-keyframes fadeIn {
+      0% {
+      opacity:0;
+      }
+      100% {
+      opacity:1;
+      } 
+      }

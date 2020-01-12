@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <h1>About Walter Rada</h1>
+   <ul>
+      <li class="fade-in">(646)410-6100</li>
+      <li class="fade-in-longer"><a href="mailto:walterantoniorada@gmail.com">walterantoniorada@gmail.com</a></li>
+      <li class="fade-in-longest">Brooklyn, NY</li>
+   </ul>
+   <article>
+      <img src="https://avatars3.githubusercontent.com/u/7140094?s=400&v=4">
+      <h2>Ask me Questions!</h2>
+      <p>Hi there! My name is Walter Rada. I’m the creator of this site and the one pictured above. I’ve added a few questions below so you could get to know me better. You can click on any of the three following questions to get started!</p>
+      <button onclick="answerthe1stQuestion()">What was your early life like?</button>
+      <p id="firstQuestion"></p>
+      <button onclick="answerthe2ndQuestion()">What do you do for work?</button> 
+      <p id="secondQuestion"></p>
+      <button onclick="answerthe3rdQuestion()">What are your hobbies and interest?</button> 
+      <p id="thirdQuestion"></p>
+   </article>
+   <script>
+      var txt1 = "Growing up in Queens, I was mystified about computers until my love for video games grew my interest in the technology behind it. Suddenly, my world opened up and I had a better understanding of the inner workings of applications. In my first semester at college, I led a team in a class project to create a game prototype. As a graduate, I am now persuing learning opportunities that will allow me to enter the software engineering space.";
+      var txt2 = "I currently work as a network engineer at TD Ameritrade. I troubleshoot there daily networking issues, remediation efforts, and branch expansion efforts.";
+      var txt3 = "I like video games, independent films, and conventions like Comic Con. Two interesting independent films I saw this year are The Lighthouse and Parasite.";
+      var x = 0, y = 0, z = 0;
+      var firstQuestionUnAnswered = true;
+      var secondQuestionUnAnswered = true;
+      var thirdQuestionUnAnswered = true;
+      function firstAnswer() {
+        if (x < txt1.length) {
+          document.getElementById("firstQuestion").innerHTML += txt1.charAt(x);
+          x++;
+          setTimeout(firstAnswer, 10);
+        }
+      }
+      function secondAnswer() {
+        if (y < txt2.length) {
+          document.getElementById("secondQuestion").innerHTML += txt2.charAt(y);
+          y++;
+          setTimeout(secondAnswer, 10);
+        }
+      }
+      function thirdAnswer() {
+        if (z < txt3.length) {
+          document.getElementById("thirdQuestion").innerHTML += txt3.charAt(z);
+          z++;
+          setTimeout(thirdAnswer, 10);
+        }
+      }
+      
+      function answerthe1stQuestion() {
+      
+      if (firstQuestionUnAnswered) {
+          firstAnswer();
+      	firstQuestionUnAnswered = false;
+      } else {
+      	document.getElementById("firstQuestion").innerHTML = "";
+      	x = 0;
+      	firstQuestionUnAnswered = true;
+        }
+      }
+      
+      function answerthe2ndQuestion() {
+      
+      if (secondQuestionUnAnswered) {
+          secondAnswer();
+      	secondQuestionUnAnswered = false;
+      } else {
+      	document.getElementById("secondQuestion").innerHTML = "";
+      	y = 0;
+      	secondQuestionUnAnswered = true;
+        }
+      }
+      
+      
+      function answerthe3rdQuestion() {
+      
+      if (thirdQuestionUnAnswered) {
+          thirdAnswer();
+      	thirdQuestionUnAnswered = false;
+      } else {
+      	document.getElementById("thirdQuestion").innerHTML = "";
+      	z = 0;
+      	thirdQuestionUnAnswered = true;
+        }
+      }
+      
+        
+   </script>
+</body>
